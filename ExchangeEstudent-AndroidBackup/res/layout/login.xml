@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DDDDDD"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/splash_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:height="20sp" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/logoexcestu" />
+
+        <TextView
+            android:id="@+id/loginIntro"
+            style="@style/header_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/loginInfo"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/splash_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:height="0dp" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:hint="username"
+            android:imeOptions="actionNext"            
+            android:inputType="textAutoComplete"
+            android:padding="4dp"
+            android:textSize="14sp"
+            android:maxLength="30">
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:textSize="14sp"
+            android:maxLength="12" >
+        </EditText>
+
+        <Button
+            android:id="@+id/signin"
+            style="@style/button_small"
+            android:layout_below="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/btn_signin" />
+
+        <Button
+            android:id="@+id/signup"
+            style="@style/button_small"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="68dp"
+            android:onClick="onClick"
+            android:text="@string/btn_signup" />
+
+    </RelativeLayout>
+
+</LinearLayout>

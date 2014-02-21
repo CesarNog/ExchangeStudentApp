@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    android:scrollbars="none"
+    android:clickable="false"
+    android:longClickable="false"
+    android:background="@color/blue_liga"
+    style="?android:attr/listSeparatorTextViewStyle" />

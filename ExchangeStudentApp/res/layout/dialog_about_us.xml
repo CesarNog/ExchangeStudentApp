@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/about_us_layout" android:id="@+id/about_us_layout" >
+
+    <ScrollView
+        android:id="@+id/about_us_layout_scroll"
+        style="@style/about_us_scroll" >
+
+        <TextView
+            android:id="@+id/about_us_layout_text"
+            style="@style/about_us_text" />
+    </ScrollView>
+
+</LinearLayout>

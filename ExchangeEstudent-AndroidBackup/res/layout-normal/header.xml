@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_gravity="center_horizontal"
+        style="@style/header_style" >
+
+        <ImageView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cpqd" />
+        
+        <View
+            android:id="@+id/header_home_divider"
+            android:layout_width="2dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/header_text"
+            android:background="@color/white"/>        
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/header_home_divider"
+            android:text="@string/app_title"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/header_home"
+            style="@style/header_button"
+            android:layout_toLeftOf="@+id/header_list"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu_home" />
+
+        <ImageButton
+            android:id="@+id/header_list"
+            style="@style/header_button"
+            android:layout_toLeftOf="@+id/header_more"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu_list" />
+        
+        <ImageButton
+            android:id="@+id/header_more"
+            style="@style/header_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu_more" />
+        
+
+    </RelativeLayout>
+</merge>

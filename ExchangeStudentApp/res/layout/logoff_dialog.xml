@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/questionLogoff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageAskLogoff"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageAskLogoff"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/dialogButtonYes"
+        style="@style/dialer_button_small"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageAskLogoff"
+        android:text="@string/button_yes" />
+
+    <Button
+        android:id="@+id/dialogButtonNo"
+        style="@style/dialer_button_small"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dialogButtonYes"
+        android:layout_alignBottom="@+id/dialogButtonYes"
+        android:layout_alignParentRight="true"
+        android:text="@string/button_no" />
+
+    <ImageView
+        android:id="@+id/imageAskLogoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialogButtonYes"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

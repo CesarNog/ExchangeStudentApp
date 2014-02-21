@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/stats_list_layout" >
+    
+    <ImageView
+        android:id="@+id/stats_carrier"
+        style="@style/img_stats_style" />
+
+    <LinearLayout
+        style="@style/stats_list_layout_texts"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/stats_value"
+            style="@style/stats_list_item_style" />
+    </LinearLayout>
+
+</LinearLayout>

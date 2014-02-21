@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme.NoTitleOrDrop" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Estilos comuns -->
+    <!-- Layouts -->
+    <style name="main_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <!-- Botões -->
+    <style name="regular_buttons">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal|center</item>
+    </style>
+
+    <style name="regular_buttons_dark">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#3b5998</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal|center</item>
+    </style>
+
+    <!-- Tela de inicio (splash) -->
+    <!-- tela completa -->
+    <style name="splash_screen">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/blue_liga</item>
+        <item name="android:gravity">center_vertical|center_horizontal|center</item>
+    </style>
+
+    <style name="register_screen">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/blue_dark</item>
+        <item name="android:gravity">center_vertical|center_horizontal|center</item>
+    </style>
+
+    <style name="button_small" parent="@style/dialer_button">
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="button_signin" parent="@style/regular_buttons_dark">
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <!-- parte de cima da tela inicial -->
+    <style name="splash_style_upper">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/blue_liga</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:src">@drawable/logo</item>
+    </style>
+
+    <!-- parte de baixo da tela inicial -->
+    <style name="splash_style_low">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- logo da tela de splash -->
+    <style name="splash_style_logo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal|center</item>
+        <item name="android:src">@drawable/liga_logo</item>
+    </style>
+    <!-- text da parte de cima da tela de splash -->
+    <style name="splash_style_text_upper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal|center</item>
+        <item name="android:text">@string/app_title</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30dp</item>
+    </style>
+
+    <!-- text da parte de baixo da tela de splash -->
+    <style name="splash_style_text_low">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical|center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/app_copyright</item>
+    </style>
+
+    <!-- Caixa de texto de buscar de operadora -->
+    <style name="regular_edit_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/main_edit_text</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">28dp</item>
+    </style>
+
+    <!-- Caixa de texto de buscar de operadora para tela normal -->
+    <style name="regular_edit_text_normal" parent="@style/regular_edit_text">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+
+    <!-- Caixa de texto de buscar de operadora para tela pequena -->
+    <style name="regular_edit_text_small" parent="@style/regular_edit_text">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- HEADER -->
+    <!-- Tela do Header -->
+    <style name="header_style">
+        <item name="android:background">@drawable/header_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+    <!-- Tela do Header para tela normal -->
+    <style name="header_style_normal" parent="@style/header_style">
+        <item name="android:layout_height">45dp</item>
+    </style>
+    <!-- Tela do Header para tela pequena -->
+    <style name="header_style_small" parent="@style/header_style">
+        <item name="android:layout_height">35dp</item>
+    </style>
+    <!-- Texto do header -->
+    <style name="header_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/app_title</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">6dp</item>
+    </style>
+
+    <style name="header_text_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/app_title</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">6dp</item>
+    </style>
+
+    <!-- Botões do header -->
+    <style name="header_button">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">false</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:onClick">headerButtons</item>
+    </style>
+    <!-- PRINCIPAL -->
+    <!-- Tela principal -->
+    <style name="main_content">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+    <!-- Caixa de texto de buscar de operadora -->
+    <style name="phone_edit_text" parent="@style/regular_edit_text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:digits">0123456789</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">16</item>
+        <item name="android:hint">Digite o telefone</item>
+    </style>
+    <!-- Caixa de busca para tela normal -->
+    <style name="phone_edit_text_normal" parent="@style/phone_edit_text">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+    <!-- Caixa de busca para tela pequena -->
+    <style name="phone_edit_text_small" parent="@style/phone_edit_text">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- Botões de buscar operadora -->
+    <style name="backspace_button" parent="@style/regular_buttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:src">@drawable/ic_btn_clear</item>
+    </style>
+    <!-- Botões de buscar operadora para tela normal -->
+    <style name="backspace_button_normal" parent="@style/backspace_button">
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <!-- Botões de buscar operadora para tela pequena -->
+    <style name="backspace_button_small" parent="@style/backspace_button">
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <!-- Logo operadora encontrada -->
+    <style name="carrier_found">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- DISCADOR -->
+    <!-- Tela do discador -->
+    <style name="dialer_main_layout" parent="@style/main_layout">
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <!-- Tela do discador  para tela pequena -->
+    <style name="dialer_main_layout_small" parent="@style/main_layout">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <!-- Linhas com botões do discador -->
+    <style name="dialer_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Linhas com botões do discador para tela pequena -->
+    <style name="dialer_layout_small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Botões do discador -->
+    <style name="dialer_button" parent="@style/regular_buttons">
+        <item name="android:background">@drawable/btn_blue_dark</item>
+        <item name="android:onClick">dialerTyped</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+    <!-- Botões do discador (tela normal) -->
+    <style name="dialer_button_normal" parent="@style/dialer_button">
+        <item name="android:textSize">26dp</item>
+    </style>
+    <!-- Botões do discador (tela pequena) -->
+    <style name="dialer_button_small" parent="@style/dialer_button">
+        <item name="android:textSize">22dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <!-- Linha de botões do discador para tela pequena -->
+    <style name="dialer_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- Botões Buscar -->
+    <style name="find" parent="@style/regular_buttons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:text">@string/btn_find</item>
+        <item name="android:background">@drawable/btn_green</item>
+    </style>
+
+    <style name="find_normal" parent="@style/regular_buttons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:text">@string/btn_find</item>
+        <item name="android:background">@drawable/btn_green</item>
+    </style>
+    <!-- Botões Buscar (tela menor) -->
+    <style name="find_small" parent="@style/regular_buttons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:text">@string/btn_find</item>
+        <item name="android:background">@drawable/btn_green</item>
+    </style>
+    <!-- Botões ligar e Adicionar contato -->
+    <style name="add_call">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:background">@drawable/btn_blue_dark</item>
+        <item name="android:onClick">dialerTyped</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+    <!-- Botões ligar e Adicionar contato (tela menor) -->
+    <style name="add_call_small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/btn_blue_dark</item>
+        <item name="android:onClick">dialerTyped</item>
+    </style>
+    <!-- Botões apagar texto -->
+    <style name="backspace" parent="@style/dialer_button"></style>
+    <!-- Divisor vertical -->
+    <style name="vertical_divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="horizontal_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:background">@color/blue_light</item>
+    </style>
+    <!-- Tela listagem de contatos -->
+    <!-- Estilo da listagem de contatos -->
+    <style name="list_of_contacts">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:cacheColorHint">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:divider">@color/gray_light</item>
+        <item name="android:dividerHeight">0.5px</item>
+    </style>
+
+    <!-- List universities style -->
+    <style name="list_of_universities">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:cacheColorHint">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:divider">@color/gray_light</item>
+        <item name="android:dividerHeight">0.5px</item>
+    </style>
+    
+    <style name="list_of_students">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:cacheColorHint">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:divider">@color/gray_light</item>
+        <item name="android:dividerHeight">0.5px</item>
+    </style>
+
+    <style name="contact_list_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="contact_list_layout_texts">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="text_edit_text" parent="@style/regular_edit_text">
+        <item name="android:hint">@string/text_filter_contacts</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:nextFocusLeft">@id/edit_text_search</item>
+        <item name="android:nextFocusUp">@id/edit_text_search</item>
+    </style>
+
+    <style name="text_edit_text_normal" parent="@style/text_edit_text">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+    </style>
+
+    <style name="text_edit_text_small" parent="@style/text_edit_text">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="img_contact_style">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="contact_list_item_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <!-- Tela de Estatisticas -->
+    <style name="list_of_carriers">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:cacheColorHint">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:divider">@color/gray_light</item>
+        <item name="android:dividerHeight">0.5px</item>
+    </style>
+
+    <style name="stats_list_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="stats_list_layout_texts">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="img_stats_style">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="img_stats_style_small" parent="@style/img_stats_style">
+        <item name="android:layout_width">62dp</item>
+        <item name="android:layout_height">62dp</item>
+    </style>
+
+    <style name="stats_list_item_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!-- Quem Somos -->
+    <!-- Tela de Quem somos -->
+    <style name="about_us_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Logo do Quem Somos -->
+    <style name="about_us_logo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <!-- Scroll do Quem Somos -->
+    <style name="about_us_scroll">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <!-- Texto do Quem Somos -->
+    <style name="about_us_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:text">@string/about_us_text</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <!-- Botão de voltar do Quem Somos -->
+    <style name="about_us_button_back">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:text">@string/btn_back</item>
+    </style>
+
+    <!-- Dialog de ação na lista de contatos -->
+    <!-- layout principal -->
+    <style name="dialog_contact_action_main_layout" parent="@style/main_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Estilo correspondendo as linhas de elementos -->
+    <style name="dialog_contact_action_line_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Estilo da foto do contato -->
+    <style name="dialog_contact_action_photo_layout">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <!-- Estilo da onde fica o nome e no número do contato -->
+    <style name="dialog_contact_action_name_phone_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Estilo do nome do contato -->
+    <style name="dialog_contact_action_name_layout" parent="@style/contact_list_item_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <!-- Estilo do telefone do contato -->
+    <style name="dialog_contact_action_phone_layout" parent="@style/contact_list_item_style">
+        <item name="android:textColor">@color/blue_light</item>
+    </style>
+
+    <!-- Estilo dos botões de acção -->
+    <style name="dialog_contact_action_buttons_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Estilo do botão encontrar operadora -->
+    <style name="dialog_contact_action_update_carrier_layout" parent="@style/dialog_contact_action_buttons_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/btn_green</item>
+    </style>
+
+    <!-- Estilo de onde ficam os botões ligar e mensagem -->
+    <style name="dialog_contact_action_buttons_call_message_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Estilo do botão ligar -->
+    <style name="dialog_contact_action_call_layout" parent="@style/dialog_contact_action_buttons_layout">
+        <item name="android:background">@drawable/btn_blue</item>
+    </style>
+
+    <!-- Estilo do botão enviar mensagem -->
+    <style name="dialog_contact_action_message_layout" parent="@style/dialog_contact_action_buttons_layout">
+        <item name="android:background">@drawable/btn_blue</item>
+    </style>
+
+    <!-- Estilo do botão voltar -->
+    <style name="dialog_contact_action_back_layout" parent="@style/about_us_button_back">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Dialog animation -->
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>

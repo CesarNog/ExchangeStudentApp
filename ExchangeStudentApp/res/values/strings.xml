@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Exchange Student</string>
+    <string name="app_title">The Exchange Student</string>
+    <string name="app_facebook_id">594696910579566</string>
+    <string name="welcome">The Exchange Student</string>
+    <string name="app_copyright">2013. All rights reserved.</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="country_prompt">Choose a country</string>
+    <string name="signing_in_status">Signing in progress</string>
+    <string name="button_no">No</string>
+    <string name="button_yes">Yes</string>
+    
+    <string-array name="country_arrays">
+        <item>Choose a country</item>        
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Find Universities</item>
+        <item>Group Discussions</item>
+        <item>Universities News</item>
+    </string-array>
+    
+    <string-array name="nav_drawer_chat">
+        <item>Cesar</item>
+        <item>Kim-dor</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="text_filter_universities">Search Universities</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="btn_signup">Not registered? Sign Up now!</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_logoff">Logoff</string>
+    <string name="loginInfo">The Exchange Student</string>
+    <string name="registerUser">Register a new user</string>
+    
+    <string name="loading_title">Wait</string>
+    <string name="loading_message">Loading&#8230;</string>
+
+    <!-- Botões -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_find">Search</string>
+    <string name="btn_chat">Chat</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_back">Go back</string>  
+    <string name="btn_update">Refresh</string>
+
+    <string name="text_filter_contacts">Search</string>
+
+
+    <!-- (Options Menu) -->
+    <string name="menu_about">About</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_new_user">Add</string>
+    <string name="menu_settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="about_us_title">About us</string>
+
+    <!-- Dialogs -->
+
+    <string name="about_us_text">The Exchange Student App
+
+         \n\n 2013 All rights reserved.</string>
+
+    <string name="dialog_areacode_message">Digite seu DDD padrão</string>
+
+</resources>

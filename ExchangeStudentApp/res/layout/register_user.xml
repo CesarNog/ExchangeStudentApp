@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DDDDDD"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/splash_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="88dp"
+        android:height="20sp" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:src="@drawable/logoexcestu" />
+
+        <TextView
+            android:id="@+id/registerUserInfo"
+            style="@style/header_text_small"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/logo"
+            android:gravity="center"
+            android:text="@string/registerUser"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView_registerUser"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/formNewUser"
+            style="@style/splash_screen"
+            android:layout_width="fill_parent"
+            android:layout_height="521dp"
+            android:layout_weight="1.00"
+            android:padding="10dip" >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:hint="Username"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="30"
+                android:padding="4dp"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:layout_below="@id/username"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:padding="4dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/repeatedPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:layout_below="@id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="Repeate your password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:padding="4dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ssn"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:layout_below="@id/repeatedPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="SSN (Social Security Number)"
+                android:imeOptions="actionNext"
+                android:inputType="text|number"
+                android:maxLength="9"
+                android:padding="4dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_alignLeft="@+id/lastName"
+                android:layout_alignRight="@+id/lastName"
+                android:layout_below="@id/ssn"
+                android:hint="First Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textAutoComplete"
+                android:maxLength="30"
+                android:padding="4dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/reset"
+                android:layout_alignRight="@+id/ssn"
+                android:layout_below="@+id/firstName"
+                android:ems="10"
+                android:hint="Last Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textAutoComplete"
+                android:maxLength="30"
+                android:padding="4dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:layout_alignLeft="@+id/firstName"
+                android:layout_below="@+id/lastName"
+                android:ems="10"
+                android:hint="Date of Birth (MM/DD/AAAA)"
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:maxLength="10"
+                android:padding="4dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/middleName"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_above="@+id/lastName"
+                android:layout_alignLeft="@+id/submit"
+                android:layout_alignRight="@+id/submit"
+                android:ems="10"
+                android:hint="Middle Initial"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textAutoComplete"
+                android:maxLength="30"
+                android:padding="4dp"
+                android:textSize="14sp" />
+            
+             <Spinner
+                 android:id="@+id/country_spinner"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/dob"
+                 android:prompt="@string/country_prompt" 
+                 android:entries="@array/country_arrays"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/submit" >
+            </View>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/dialer_button_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/view1"
+                android:layout_below="@+id/reset"
+                android:layout_marginTop="21dp"
+                android:onClick="onClick"
+                android:text="@string/btn_submit" />
+
+            <Button
+                android:id="@+id/reset"
+                style="@style/dialer_button_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view1"
+                android:layout_below="@+id/country_spinner"
+                android:layout_marginTop="54dp"
+                android:onClick="onClick"
+                android:text="@string/btn_reset" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="list_item_title">#fff</color>
+    <color name="chat_background">#F7DB7E</color>
+    <color name="chat_background_pressed">#39331D</color>
+    <color name="list_background">#2D8EB3</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+    <!-- Simple colors -->
+    <color name="orange">#FF9A00</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue_light">#98CDEC</color>
+
+    <!-- Other colors -->
+    <color name="blue_cpqd">#0075bc</color>
+    <color name="blue_liga">#00ADEF</color>
+    <color name="blue_dark">#2D8EB3</color>
+    <color name="gray_dark">#4C4C4C</color>
+    <color name="gray_light">#F2F2F2</color>
+    <color name="gray_soft1">#F2F2F2</color>
+    <color name="gray_soft2">#E6E6E6</color>
+    <color name="gray_soft3">#C7C7C7</color>
+
+    <!-- Cor dos botoões -->
+    <!-- Azul -->
+    <color name="blue_start_color">#00ADEF</color>
+    <color name="blue_end_color">#00ADEF</color>
+    <color name="blue_press_color">#6FD2F7</color>
+    <!-- Verde -->
+    <color name="green_start_color">#6BCC08</color>
+    <color name="green_end_color">#008240</color>
+    <color name="green_press_color">#D0FBA4</color>
+    <!-- Laranja -->
+    <color name="orange_start_color">#FF8C00</color>
+    <color name="orange_end_color">#A65B00</color>
+    <color name="orange_press_color">#FEE8CC</color>
+    <!-- Vermelho -->
+    <color name="red_start_color">#D24D4D</color>
+    <color name="red_end_color">#952525</color>
+    <color name="red_press_color">#E79E9E</color>
+    <!-- Azul claro -->
+    <color name="blue_light_start_color">#9CCBE7</color>
+    <color name="blue_light_end_color">#B8DDF3</color>
+    <color name="blue_light_press_color">#C8E3F3</color>
+
+</resources>

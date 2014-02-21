@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exchange.student"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <!-- Connect to Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permission to read contacts -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.exchange.student.activity.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- Login -->
+        <activity
+            android:name="com.exchange.student.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- Register User -->
+        <activity
+            android:name="com.exchange.student.activity.NewUserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+                
+                        
+        <!-- Splash screen -->
+        <activity
+            android:name=".activity.SplashScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

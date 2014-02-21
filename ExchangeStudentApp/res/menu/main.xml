@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- Search, should appear as action button -->
+     <item android:id="@+id/action_search"
+          android:title="@string/btn_find"
+          android:icon="@drawable/ic_btn_filter"
+          android:showAsAction="collapseActionView|ifRoom"
+          android:actionViewClass="android.widget.SearchView" />
+    
+    <!-- Chat, should appear as action button -->
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@drawable/ic_chat"      
+        android:title="@string/btn_chat"       
+        android:showAsAction="ifRoom"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="99"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/about_us_title"/>
+    
+     <item
+        android:id="@+id/logoff"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/btn_logoff"/>
+
+</menu>
